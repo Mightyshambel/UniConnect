@@ -1,0 +1,56 @@
+/* header.component.scss */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F3530;
+    color: white;
+    padding: 10px 50px;
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    nav {
+      a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .auth-buttons {
+      button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-left: 10px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+  
+        &:hover {
+          background-color: #C1DDA0;
+;
+        }
+      }
+  
+      .btn-signup {
+        background-color: #C1DDA0;
+        color: white;
+  
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+  
