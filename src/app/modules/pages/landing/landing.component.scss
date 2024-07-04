@@ -1,12 +1,14 @@
 /* home.component.scss */
 .hero-section {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background: url('landing.webp') no-repeat center center/cover;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('/assets/homepage.jpg') no-repeat center center/cover;
     height: 100vh;
-    color:  #C1DDA0;
-    text-align: center;
+    height: 100vh;
+    color:  white;
+    text-align: left;
+    padding-left: 40px;
   
     .content {
       max-width: 600px;
@@ -32,7 +34,7 @@
           margin: 0 10px;
   
           &.btn-primary {
-            background-color: #673ab7; // Example purple
+            background-color: #C1DDA0; // Example purple
             color: white;
           }
   
