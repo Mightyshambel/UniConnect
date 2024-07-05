@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { HomelayoutComponent } from './layout/homelayout/homelayout.component';
 import { AuthlayoutComponent } from './layout/authlayout/authlayout.component';
 

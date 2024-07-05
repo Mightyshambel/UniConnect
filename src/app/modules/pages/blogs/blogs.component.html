@@ -1,1 +1,14 @@
-<p>blogs works!</p>
+
+<div class="blog-container">
+    <div class="title">
+        <h1>Articles</h1>
+    </div>
+    <div></div>
+    <div *ngFor="let article of articles" class="article-card">
+      <img [src]="article.imageUrl" alt="Article Image">
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.description }}</p>
+      <button>{{ article.buttonText }}</button>
+    </div>
+  </div>
+  
