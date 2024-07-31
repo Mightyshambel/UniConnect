@@ -1,11 +1,14 @@
 .app-header {
+  width: 100%;  // or 100vw if you want to ensure it covers the full viewport width including scrollbar
+  padding: 10px 20px ;
+  position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #0F3530;
     color: white;
-    padding: 10px 50px;
-  
+    z-index: 1000;
+    
     .logo {
       font-size: 24px;
       font-weight: bold;

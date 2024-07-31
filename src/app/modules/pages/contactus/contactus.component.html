@@ -1,1 +1,30 @@
-<p>contactus works!</p>
+<!-- contact.component.html -->
+<h1 class="title">Get in touch with us</h1>
+<div class="contact-container" ng-controller="ContactController as contact">
+   
+    <div class="contact-info">
+        <div class="contact-block">
+            <h3>Call Us</h3>
+            <p><span class="phone-number">1 (234) 567-891</span><br><span class="phone-number">1 (234) 987-654</span></p>
+        </div>
+        <div class="contact-block">
+            <h3>Location</h3>
+            <p>121 Rock Street, 21 Avenue,<br>New York, NY 92103-9000</p>
+        </div>
+        <div class="contact-block">
+            <h3>Business Hours</h3>
+            <p>Mon – Fri .... 10 am – 8 pm<br>Sat, Sun ....... Closed</p>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form ng-submit="contact.submitForm()">
+            <input type="text" ng-model="contact.formData.name" placeholder="Enter your Name" required>
+            <input type="email" ng-model="contact.formData.email" placeholder="Enter a valid email address" required>
+            <textarea ng-model="contact.formData.message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
