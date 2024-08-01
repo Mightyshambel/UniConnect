@@ -1,0 +1,69 @@
+// Ensures the entire component is centered and covers the necessary areas
+.plan-your-future {
+    padding: 50px 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #C1DDA0; // Ensuring the background covers the full area
+    color: white;
+  
+    .header {
+      width: 100%;
+      text-align: start;
+      padding: 20px;
+  
+      h1 {
+        padding:10px 50px;
+        font-size: 36px;
+        margin-bottom: 0; 
+      }
+  
+      p {
+        padding:10px 50px;
+        font-size: 18px;
+        margin-top: 5px;
+        width: 30%; 
+      }
+    }
+  
+    .sections {
+      display: flex;
+      justify-content: space-evenly;
+       // This makes sure that the sections container uses the full width
+  
+      .section {
+        display: flex;
+        padding: 50px 10px;
+        color:black;
+        flex-direction: column;
+        align-items: start;
+        width: 30%; // Controls the width of each section to allow for three across
+        background-color: white;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+  
+        h2 {
+          margin-top: 20px;
+          font-size: 24px;
+        }
+  
+        p {
+          text-align: start;
+          font-size: 16px;
+        }
+  
+        a {
+          font-size: 16px;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
